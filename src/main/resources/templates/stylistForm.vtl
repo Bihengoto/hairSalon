@@ -1,0 +1,44 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+   <a class="navbar-brand" href="/">HOME</a>
+   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+     <span class="navbar-toggler-icon"></span>
+   </button>
+   <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+     <div class="navbar-nav">
+       <a class="nav-item nav-link" href="/stylists">Stylists</a>
+       <a class="nav-item nav-link" href="/clients">Clients</a>
+     </div>
+   </div>
+ </nav>
+
+<div class="card container client-form">
+    <div class="card-header">
+        <h2> Add Stylist</h2>
+    </div>
+    <div class="card-body">
+        <form action="/stylists" method="post" autocomplete='off'>
+
+                <div class="form-group">
+                    <label for="name">Full Name</label>
+                    <input type="text" class="form-control" name="name" id="name" placeholder="Jane Alice">
+                </div>
+                <div class="form-group">
+                    <label for="age">Age</label>
+                    <input type="text" class="form-control" name="age" id="age" placeholder="35">
+                </div>
+                <div class="form-group">
+                    <label for="gender">Gender</label>
+                    <input type="text" class="form-control" name="gender" id="gender" placeholder="F">
+                </div>
+                <div class="form-group">
+                    <label for="Email">Email</label>
+                    <input type="text" class="form-control" name="email" id="email" placeholder="xx@xx.xxx">
+                </div>
+
+            <button type="submit" class="btn btn-success">Save</button>
+        </form>
+    </div>
+    <div class="card-footer">
+        <p> Fill the fields appropriately </p>
+    </div>
+</div>

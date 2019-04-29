@@ -1,0 +1,47 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+   <a class="navbar-brand" href="/">HOME</a>
+   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+     <span class="navbar-toggler-icon"></span>
+   </button>
+   <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+     <div class="navbar-nav">
+       <a class="nav-item nav-link" href="/stylists">Stylists</a>
+       <a class="nav-item nav-link" href="/clients">Clients</a>
+     </div>
+   </div>
+ </nav>
+
+  <div class="stylist-content container">
+      <h1 class="stylist-heading"> STYLISTS</h1>
+      <table class="table table-light">
+          <thead class="thead-light">
+          <tr>
+              <th scope="col">ID</th>
+              <th scope="col">Full Name</th>
+              <th scope="col">Age</th>
+              <th scope="col">Gender</th>
+              <th scope="col">Email</th>
+              <th scope="col">Changes</th>
+              <th scope="col">Erase</th>
+          </tr>
+          </thead>
+          <tbody>
+          #foreach ($stylist in $stylists)
+          <tr>
+              <th scope="row">$stylist.getId()</th>
+              <td>$stylist.getName()</td>
+              <td>$stylist.getAge()</td>
+              <td>$stylist.getGender()</td>
+              <td>$stylist.getEmail()</td>
+              <td>
+                  <a  class="btn btn-success btn-sm" href="stylist/$stylist.getId()">Edit</a>
+              </td>
+              <td>
+                  <a  class="btn btn-success btn-sm" href="/stylist/$stylist.getId()/delete">Delete</a>
+              </td>
+          </tr>
+          #end
+          </tbody>
+      </table>
+      <a class="btn btn-success nav-item" href="/stylists/new"> NEW STYLIST </a>
+  </div>
