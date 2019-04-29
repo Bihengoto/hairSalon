@@ -29,7 +29,7 @@
           #foreach ($stylist in $stylists)
           <tr>
               <th scope="row">$stylist.getId()</th>
-              <td>$stylist.getName()</td>
+              <td><a  class="text-info" href="/stylists/$stylist.getId()">$stylist.getName()</a></td>
               <td>$stylist.getAge()</td>
               <td>$stylist.getGender()</td>
               <td>$stylist.getEmail()</td>
