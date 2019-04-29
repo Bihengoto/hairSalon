@@ -15,29 +15,29 @@ public class Client {
 //        this.stylist_id = stylist_id;
 //    }
 
-    public int getId() {
-        return id;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public String getPhone() {
-        return phone;
-    }
-
-    public String getGender() {
-        return gender;
-    }
-
-    public String getEmail() {
-        return email;
-    }
-
-    public int getStylist_id() {
-        return stylist_id;
-    }
+//    public int getId() {
+//        return id;
+//    }
+//
+//    public String getName() {
+//        return name;
+//    }
+//
+//    public String getPhone() {
+//        return phone;
+//    }
+//
+//    public String getGender() {
+//        return gender;
+//    }
+//
+//    public String getEmail() {
+//        return email;
+//    }
+//
+//    public int getStylist_id() {
+//        return stylist_id;
+//    }
 
     public static List<Client> all() {
         String sql = "SELECT * FROM clients";
