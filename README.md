@@ -47,6 +47,16 @@ Follow the following setup instructions to run the program.:
 7. Postgres(psql)
 
 
+## Database
+
+```
+In PSQL:
+
+     CREATE DATABASE hair_salon;
+     CREATE TABLE stylists(id int,name varchar,gender varchar,age int,email varchar);
+     CREATE TABLE clients(id int,name varchar,gender varchar,phone varchar,email varchar,stylistid int);
+```
+
 ## Known Bugs
 NO known bugs as at the moment please reach to us if you see any.
 
