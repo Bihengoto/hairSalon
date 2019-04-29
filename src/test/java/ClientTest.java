@@ -13,41 +13,41 @@ public class ClientTest {
         }
     }
 
+    @Test
+    public void newClient_instantiatesCorrectly() {
+        Client newClient = new Client("dorcas", "0708437712", "F","dorcas@gmail.com", 3 );
+        assertTrue(newClient instanceof Client);
+    }
+
 //    @Test
-//    public void newClient_instantiatesCorrectly() {
+//    public void newClient_getName_dorcas() {
 //        Client newClient = new Client("dorcas", "0708437712", "F","dorcas@gmail.com", 3 );
-//        assertTrue(newClient instanceof Client);
+//        assertEquals("dorcas", newClient.getName());
 //    }
-
-    @Test
-    public void newClient_getName_dorcas() {
-        Client newClient = new Client("dorcas", "0708437712", "F","dorcas@gmail.com", 3 );
-        assertEquals("dorcas", newClient.getName());
-    }
-
-    @Test
-    public void newClient_getPhone_0708437712() {
-        Client newClient = new Client("dorcas", "0708437712", "F","dorcas@gmail.com", 3 );
-        assertEquals("0708437712", newClient.getPhone());
-    }
-
-    @Test
-    public void newClient_getEmail_dorcasgmailcom() {
-        Client newClient = new Client("dorcas", "0708437712", "F","dorcas@gmail.com", 3 );
-        assertEquals("dorcas@gmail.com", newClient.getEmail());
-    }
-
-    @Test
-    public void newClient_getGender_F() {
-        Client newClient = new Client("dorcas", "0708437712", "F","dorcas@gmail.com", 3 );
-        assertEquals("F", newClient.getGender());
-    }
-
-    @Test
-    public void newClient_getStylist_id_3() {
-        Client newClient = new Client("dorcas", "0708437712", "F","dorcas@gmail.com", 3 );
-        assertEquals(3, newClient.getStylist_id());
-    }
+//
+//    @Test
+//    public void newClient_getPhone_0708437712() {
+//        Client newClient = new Client("dorcas", "0708437712", "F","dorcas@gmail.com", 3 );
+//        assertEquals("0708437712", newClient.getPhone());
+//    }
+//
+//    @Test
+//    public void newClient_getEmail_dorcasgmailcom() {
+//        Client newClient = new Client("dorcas", "0708437712", "F","dorcas@gmail.com", 3 );
+//        assertEquals("dorcas@gmail.com", newClient.getEmail());
+//    }
+//
+//    @Test
+//    public void newClient_getGender_F() {
+//        Client newClient = new Client("dorcas", "0708437712", "F","dorcas@gmail.com", 3 );
+//        assertEquals("F", newClient.getGender());
+//    }
+//
+//    @Test
+//    public void newClient_getStylist_id_3() {
+//        Client newClient = new Client("dorcas", "0708437712", "F","dorcas@gmail.com", 3 );
+//        assertEquals(3, newClient.getStylist_id());
+//    }
 
     @Test
     public void all_returnsAllInstancesOfClients_true() {
