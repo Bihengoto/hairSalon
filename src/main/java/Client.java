@@ -3,41 +3,41 @@ import org.sql2o.*;
 import java.util.List;
 
 public class Client {
-//    private int id;
-//    private String name, phone, gender, email;
-//    private int stylist_id;
-//
-//    public Client(String name, String phone, String gender, String email, int stylist_id) {
-//        this.name = name;
-//        this.phone = phone;
-//        this.gender = gender;
-//        this.email = email;
-//        this.stylist_id = stylist_id;
-//    }
+    private int id;
+    private String name, phone, gender, email;
+    private int stylist_id;
 
-//    public int getId() {
-//        return id;
-//    }
-//
-//    public String getName() {
-//        return name;
-//    }
-//
-//    public String getPhone() {
-//        return phone;
-//    }
-//
-//    public String getGender() {
-//        return gender;
-//    }
-//
-//    public String getEmail() {
-//        return email;
-//    }
-//
-//    public int getStylist_id() {
-//        return stylist_id;
-//    }
+    public Client(String name, String phone, String gender, String email, int stylist_id) {
+        this.name = name;
+        this.phone = phone;
+        this.gender = gender;
+        this.email = email;
+        this.stylist_id = stylist_id;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public String getPhone() {
+        return phone;
+    }
+
+    public String getGender() {
+        return gender;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public int getStylist_id() {
+        return stylist_id;
+    }
 
     public static List<Client> all() {
         String sql = "SELECT * FROM clients";

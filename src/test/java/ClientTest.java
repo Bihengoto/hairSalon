@@ -5,12 +5,6 @@ import static org.junit.Assert.*;
 
 public class ClientTest {
 
-
-//    @Before
-//    public void setUp() {
-//        DB.sql2o = new Sql2o("jdbc:postgresql://localhost:5432/hair_salon", "mahugu", "111111");
-//    }
-
     @After
     public void tearDown() {
         try(Connection con = DB.sql2o.open()) {
@@ -19,11 +13,11 @@ public class ClientTest {
         }
     }
 
-    @Test
-    public void newClient_instantiatesCorrectly() {
-        Client newClient = new Client("dorcas", "0708437712", "F","dorcas@gmail.com", 3 );
-        assertTrue(newClient instanceof Client);
-    }
+//    @Test
+//    public void newClient_instantiatesCorrectly() {
+//        Client newClient = new Client("dorcas", "0708437712", "F","dorcas@gmail.com", 3 );
+//        assertTrue(newClient instanceof Client);
+//    }
 
     @Test
     public void newClient_getName_dorcas() {
