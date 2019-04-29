@@ -49,40 +49,40 @@ public class ClientTest {
         assertEquals(3, newClient.getStylist_id());
     }
 
-//    @Test
-//    public void all_returnsAllInstancesOfClients_true() {
-//        Client newClient = new Client("dorcas", "0708437712", "F", "dorcas@gmail.com", 3 );
-//        newClient.save();
-//        Client newClient2 = new Client("dorcas", "0708447347", "F","dorcasy@gmail.com", 2 );
-//        newClient2.save();
-//
-//        assertEquals(true, Client.all().get(0).equals(newClient));
-//        assertEquals(true, Client.all().get(1).equals(newClient2));
-//    }
-//
-//    @Test
-//    public void save_assignsIdToObject() {
-//        Client newClient = new Client("dorcas", "0708437712", "F", "dorcas@gmail.com", 3 );
-//        newClient.save();
-//        Client savedClient = Client.all().get(0);
-//        assertEquals(newClient.getId(), savedClient.getId());
-//    }
-//
-//    @Test
-//    public void getId_clientInstantiateWithAnID() {
-//        Client newClient = new Client("dorcas", "0708437712", "F", "dorcas@gmail.com", 3 );
-//        newClient.save();
-//        assertTrue(newClient.getId() > 0);
-//    }
-//
-//    @Test
-//    public void find_returnsClientWithSameId_newClient2() {
-//        Client newClient = new Client("dorcas", "0708437712", "F", "dorcas@gmail.com", 3 );
-//        newClient.save();
-//        Client newClient2 = new Client("dorcas", "0708447347", "F","dorcasy@gmail.com", 2 );
-//        newClient2.save();
-//
-//        assertEquals(Client.find(newClient2.getId()), newClient2);
-//    }
+    @Test
+    public void all_returnsAllInstancesOfClients_true() {
+        Client newClient = new Client("dorcas", "0708437712", "F", "dorcas@gmail.com", 3 );
+        newClient.save();
+        Client newClient2 = new Client("dorcas", "0708447347", "F","dorcasy@gmail.com", 2 );
+        newClient2.save();
+
+        assertEquals(true, Client.all().get(0).equals(newClient));
+        assertEquals(true, Client.all().get(1).equals(newClient2));
+    }
+
+    @Test
+    public void save_assignsIdToObject() {
+        Client newClient = new Client("dorcas", "0708437712", "F", "dorcas@gmail.com", 3 );
+        newClient.save();
+        Client savedClient = Client.all().get(0);
+        assertEquals(newClient.getId(), savedClient.getId());
+    }
+
+    @Test
+    public void getId_clientInstantiateWithAnID() {
+        Client newClient = new Client("dorcas", "0708437712", "F", "dorcas@gmail.com", 3 );
+        newClient.save();
+        assertTrue(newClient.getId() > 0);
+    }
+
+    @Test
+    public void find_returnsClientWithSameId_newClient2() {
+        Client newClient = new Client("dorcas", "0708437712", "F", "dorcas@gmail.com", 3 );
+        newClient.save();
+        Client newClient2 = new Client("dorcas", "0708447347", "F","dorcasy@gmail.com", 2 );
+        newClient2.save();
+
+        assertEquals(Client.find(newClient2.getId()), newClient2);
+    }
 
 }
